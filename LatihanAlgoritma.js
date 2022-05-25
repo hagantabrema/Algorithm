@@ -162,15 +162,15 @@
 
 ////////////////////////////////////
 
-const sumElements = (array) => {
-    let result = 0
-    for(let el of array) {
-        result += el
-    }
-    return result
-}
+// const sumElements = (array) => {
+//     let result = 0
+//     for(let el of array) {
+//         result += el
+//     }
+//     return result
+// }
 
-console.log(sumElements([1,2,3,4,5]))
+// console.log(sumElements([1,2,3,4,5]))
 
 ////////////////////////////////////
 
@@ -199,3 +199,70 @@ console.log(sumElements([1,2,3,4,5]))
 // }
 
 // console.log(sumAllPrimes(10))
+
+///////////////////////////////////////////
+
+// const getCount = (str) => {
+//     let convertedStr = str.match(/\S/g).join("")
+//     if (convertedStr.match(/[aeiou]/g) == null) {
+//         return 0
+//     } return convertedStr.match(/[aeiou]/g).length
+// }
+
+// function getCount(str) {
+//     let vowelsCount = 0;
+    
+//     // enter your magic here
+//     const arr = str.split("")
+    
+//     for (let i = 0; i < arr.length; i++) {
+//       switch(arr[i]) {
+//           case "a":
+//           vowelsCount++
+//           break
+//           case "e":
+//           vowelsCount++
+//           break
+//           case "i":
+//           vowelsCount++
+//           break
+//           case "o":
+//           vowelsCount++
+//           break
+//           case "u":
+//           vowelsCount++
+//           break
+//       }
+//     }
+    
+//     return vowelsCount;
+//   }
+
+// const getCount = (str) => {
+//     let vowelsCount = 0
+//     let vowels = ["a", "e", "i", "o", "u"]
+
+//     for (let i = 0; i < str.length; i++) {
+//         for (let j = 0; j < vowels.length; j++) {
+//             if (str[i] === vowels[j]) {
+//                 vowelsCount++
+//             }
+//         }
+//     }
+//     return vowelsCount
+// }
+
+// console.log(getCount("abracadabra"))
+
+////////////////////////////////////////
+
+// const isDivisible = (n, x, y) => n % x == 0 && n % y == 0
+
+// console.log(isDivisible(4, 1, 2))
+
+const smallestIntegerFinder = (arr) => {
+    let sorted = arr.sort((a, b) => a - b)
+    return sorted[0]
+}
+
+console.log(smallestIntegerFinder([34, 15, 88, 2]))

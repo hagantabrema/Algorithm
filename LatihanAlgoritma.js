@@ -6,10 +6,10 @@
 //             return n*2;
 //         else
 //             return n*3;
-//     }
+// }
 //     var newArray = nums.map(multipliedNums);
 //     return newArray;
-    
+
 // }
 
 // console.log(modifyArray(nums))
@@ -44,17 +44,17 @@
 ///////////////////////////////
 
 // const capitalizeLetters = (string) => {
-    // let arr = string.split(' ')
-    // for (let i = 0; i < arr.length; i++) {
-    //     for (let j = 0; j < arr[i].length; j++) {
-    //         arr[i][0].toUpperCase()
-    //         console.log(arr[i][0])
-    //     }
-    // }
+// let arr = string.split(' ')
+// for (let i = 0; i < arr.length; i++) {
+//     for (let j = 0; j < arr[i].length; j++) {
+//         arr[i][0].toUpperCase()
+//         console.log(arr[i][0])
+//     }
+// }
 
-    // let arr = string.split(" ")
-    // let uppercase = arr.map(item => item.toUpperCase())
-    // return uppercase.join(" ")
+// let arr = string.split(" ")
+// let uppercase = arr.map(item => item.toUpperCase())
+// return uppercase.join(" ")
 
 //     let newStr = string.charAt(0).toUpperCase() + string.slice(1)
 //     return newStr
@@ -211,10 +211,10 @@
 
 // function getCount(str) {
 //     let vowelsCount = 0;
-    
+
 //     // enter your magic here
 //     const arr = str.split("")
-    
+
 //     for (let i = 0; i < arr.length; i++) {
 //       switch(arr[i]) {
 //           case "a":
@@ -234,7 +234,7 @@
 //           break
 //       }
 //     }
-    
+
 //     return vowelsCount;
 //   }
 
@@ -260,9 +260,202 @@
 
 // console.log(isDivisible(4, 1, 2))
 
-const smallestIntegerFinder = (arr) => {
-    let sorted = arr.sort((a, b) => a - b)
-    return sorted[0]
-}
+////////////////////////////////////////
 
-console.log(smallestIntegerFinder([34, 15, 88, 2]))
+// const smallestIntegerFinder = (arr) => {
+//     let sorted = arr.sort((a, b) => a - b)
+//     return sorted[0]
+// }
+
+// console.log(smallestIntegerFinder([34, 15, 88, 2]))
+
+/////////////////////////////////////////////
+
+// function getAverage(marks) {
+//     let sum = 0
+//     for (let el of marks) {
+//         sum += el
+//     }
+//     let avg = sum / marks.length
+//     return Math.floor(avg)
+// }
+
+// console.log(getAverage([1, 2, 3, 4, 5]))
+
+///////////////////////////////////////////////
+
+// const rps = (p1, p2) => {
+//     /*
+//     Player1     Player2     Result
+//     rock        rock        Draw
+//     rock        scissors    Player 1 won
+//     rock        paper       Player 2 won
+//     scissors    rock        Player 2 won
+//     scissors    scissors    Draw
+//     scissors    paper       Player 1 won
+//     paper       rock        Player 1 won
+//     paper       scissors    Player 2 won
+//     paper       paper       Draw
+//     */
+//     if (p1 === p2) {
+//         return "Draw!"
+//     }
+//     if (p1 === "rock" && p2 === "scissors" || p1 === "scissors" && p2 === "paper" || p1 === "paper" && p2 === "rock") {
+//         return "Player 1 won!"
+//     }
+//     if (p1 === "rock" && p2 === "paper" || p1 === "scissors" && p2 === "rock" || p1 === "paper" && p2 === "scissors") {
+//         return "Player 2 won!"
+//     }
+
+
+//     if (p1 === "rock" && p2 === "scissors" || p1 === "scissors" && p2 === "paper" || p1 === "paper" && p2 === "rock") {
+//         return "Player 1 won!"
+//     }
+//     if (p1 === "rock" && p2 === "paper" || p1 === "scissors" && p2 === "rock" || p1 === "paper" && p2 === "scissors") {
+//         return "Player 2 won!"
+//     } else 
+//         return "Draw!"
+
+
+//     if (p1 === p2) {
+//         return "Draw!"
+//     }
+//     if (p1 === "rock" && p2 === "scissors" || p1 === "scissors" && p2 === "paper" || p1 === "paper" && p2 === "rock") {
+//         return "Player 1 won!"
+//     } else
+//         return "Player 2 won!"
+// }
+
+// console.log(rps("scissors", "paper"))
+
+//////////////////////////////////////////////
+
+// function removeChar(str) {
+
+//     return str.slice(1, str.length - 1)
+// }
+
+// const removeChar = (str) => str.slice(1, -1)
+
+// console.log(removeChar("hello"))
+
+////////////////////////////////////////////////
+
+// const positiveSum = (arr) => arr.filter(num => num > 0).reduce((prev, current) => prev + current, 0)
+
+// const positiveSum = (arr) => arr.reduce((a, b) => a + (b > 0 ? b : 0), 0)
+
+// console.log(positiveSum([1, 2, 3, -4, -5]))
+
+/////////////////////////////////////////////////
+
+// function basicOp(operation, value1, value2) {
+//     switch(operation) {
+//         case "+":
+//             return value1 + value2
+//             break
+//         case "-":
+//             return value1 - value2
+//             break
+//         case "*":
+//             return value1 * value2
+//             break
+//         case "/":
+//             return value1 / value2
+//             break
+//     }
+// }
+
+// console.log(basicOp("-", 5, 2))
+
+////////////////////////////////////////////
+
+// function repeatStr (n, s) {
+//     let result = ""
+
+//     for (let i = 1;i <= 3; i++) {
+//         result +=s
+//     }
+
+//     return result
+// }
+
+// console.log(repeatStr(3, "hello"))
+
+//////////////////////////////////////////////
+
+// function noSpace(x) {
+//     return x.match(/\S/g).join("")
+// }
+
+// console.log(noSpace('8 j 8   mBliB8g  imjB8B8  jl  B'))
+
+///////////////////////////////////////////////
+
+// const hero = (bullets, dragons) => bullets >= (dragons * 2)
+
+// console.log(hero(7, 4))
+
+///////////////////////////////////////////////
+
+// const arrayPlusArray = (arr1, arr2) => arr1.concat(arr2).reduce((prev, current) => prev + current)
+
+// console.log(arrayPlusArray([1, 4], [4, 1]))
+
+///////////////////////////////////////////////
+
+// function century(year) {
+//     return Math.ceil(year/100)
+// }
+
+// console.log(century(199))
+
+///////////////////////////////////////////////
+
+// var humanYearsCatYearsDogYears = function(humanYears) {
+//     let catYears = 0
+//     let dogYears = 0
+
+//     if (humanYears === 1) {
+//         return [humanYears, 15, 15]
+//     } else if (humanYears === 2) {
+//         return [humanYears, 24, 24]
+//     } else {
+//         return [humanYears, 24 + (humanYears-2) * 4, 24 + (humanYears-2) * 5]
+//     }
+// }
+
+// console.log(humanYearsCatYearsDogYears(3))
+
+////////////////////////////////////////////////
+
+// function points(games) {
+//     let newArr = []
+//     let points = 0
+
+//     for (let i = 0; i < games.length; i++) {
+//         newArr.push(games[i].match(/\d/g))
+//     }
+
+//     for (let i = 0; i < newArr.length; i++) {
+//         if (newArr[i][0] > newArr[i][1]) {
+//             points += 3
+//         } else if (newArr[i][0] < newArr[i][1]) {
+//             points += 0
+//         } else {
+//             points += 1
+//         }
+//     }
+
+//     return points
+// }
+
+// console.log(points(["3:1", "2:1", "1:1"]))
+
+/////////////////////////////////////////////////////////
+
+// function vowelRemover(string) {
+//     return string.replace(/[aeiou]/g, "")
+// }
+
+// console.log(shortcut("how are you today?"))

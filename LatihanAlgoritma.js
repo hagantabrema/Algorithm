@@ -458,4 +458,142 @@
 //     return string.replace(/[aeiou]/g, "")
 // }
 
-// console.log(shortcut("how are you today?"))
+// console.log(vowelRemover("how are you today?"))
+
+/////////////////////////////////////////////////////////
+
+// function squareDigits(num){
+//     return parseInt(Array.from(String(num), Number).map(val => val * val).join(""))
+// }
+
+// console.log(squareDigits(3212))
+
+// function findShort(s){
+//     let newStr = s.split(" ")
+//     let shortestWord = "abcdefghijklmnopqrstuvwxyz"
+
+//     for (let i = 0; i < newStr.length; i++) {
+//         if (newStr[i].length < shortestWord.length) {
+//             shortestWord = newStr[i]
+//         }
+//     }
+//     return shortestWord.length
+// }
+
+// console.log(findShort("bitcoin take over the world maybe who knows perhaps"))
+
+/////////////////////////////////////////////////
+
+// function filter_list(l) {
+//     return l.filter(val => typeof val !== "string")
+// }
+
+// console.log(filter_list([1,2,'a','b']))
+
+////////////////////////////////////////////////////
+
+// function DNAtoRNA(dna) {
+//     return dna.replaceAll("T", "U")
+// }
+
+// console.log(DNAtoRNA("GACCGCCGCC"))
+
+////////////////////////////////////////////////////
+
+// function yearDays(year){
+//     let days = 0
+//     if (year % 4 === 0) {
+//         days = 366
+//     } else {
+//         days = 365
+//     }
+//     return `${year} has ${days} days`
+// }
+
+// console.log(yearDays(100))
+
+////////////////////////////////////////////////////////
+
+// function bmi(weight, height) {
+//     let result = weight / Math.pow(height, 2)
+
+//     if (result <= 18.5) {
+//         return "Underweight"
+//     }
+
+//     if (result <= 25.0) {
+//         return "Normal"
+//     }
+
+//     if (result <= 30.0) {
+//         return "Overweight"
+//     }
+
+//     return "Obese"
+// }
+
+// console.log(bmi(57, 1.73))
+
+/////////////////////////////////////////////////////
+
+// function reverseWords(str) {
+//     let result = ""
+//     for (let i = str.length - 1; i >= 0; i--) {
+//         result += str[i]
+//     }
+//     return result.split(" ").reverse().join(" ")
+// }
+
+// const reverseWords = (str) => str.split(" ").map(word => word.split("").reverse().join("")).join(" ")
+
+// console.log(reverseWords("This is an example!"))
+
+//////////////////////////////////////////////////////
+
+// function validatePIN(pin) {
+//     return /^(\d{4}|\d{6})$/.test(pin)
+// }
+
+// console.log(validatePIN(12345))
+
+/////////////////////////////////////////////////////////
+
+// function betterThanAverage(classPoints, yourPoints) {
+//     return yourPoints > classPoints.reduce((prev, current) => prev + current, 0) / classPoints.length
+// }
+
+// console.log(betterThanAverage([100, 40, 34, 57, 29, 72, 57, 88], 75))
+
+///////////////////////////////////////////////////////////
+
+// function opposite(number) {
+//     return number * -1
+// }
+
+// console.log(opposite(-3))
+
+///////////////////////////////////////////////////////////
+
+// function oddOrEven(array) {
+//     return array.reduce((a, b) => a + b, 0) % 2 === 0 ? "even" : "odd"
+// }
+
+// console.log(oddOrEven([0, 1, 5]))
+
+///////////////////////////////////////////////////////////
+
+// function smash (words) {
+//     return words.join(" ")
+// };
+
+// console.log(smash(["this", "is", "a", "really", "long", "sentence"]))
+
+///////////////////////////////////////////////////////////
+
+// function descendingOrder(n){
+//     return parseInt(n.toString().split("").sort((a, b) => b - a).join(""))
+// }
+
+// console.log(descendingOrder(123456789))
+
+///////////////////////////////////////////////////////////

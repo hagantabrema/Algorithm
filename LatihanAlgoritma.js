@@ -597,3 +597,98 @@
 // console.log(descendingOrder(123456789))
 
 ///////////////////////////////////////////////////////////
+
+// function isVow(a){
+//     for (let i = 0; i < a.length; i++) {
+//         if (a[i] === 97) {
+//             a[i] = "a"
+//         } else if (a[i] === 101) {
+//             a[i] = "e"
+//         } else if (a[i] === 105) {
+//             a[i] = "i"
+//         } else if (a[i] === 111) {
+//             a[i] = "o"
+//         } else if (a[i] === 117) {
+//             a[i] = "u"
+//         }
+//     }
+//     return a
+// }
+
+// console.log(isVow([118,117,120,121,117,98,122,97,120,106,104,116,113,114,113,120,106]))
+
+//////////////////////////////////////////////
+
+// var isSquare = function(n){
+//     return Math.ceil(Math.sqrt(n)) === Math.sqrt(n)
+// }
+
+// console.log(isSquare(5))
+
+///////////////////////////////////////////////
+
+// const binaryArrayToNumber = arr => parseInt(arr.join(""), 2)
+
+// console.log(binaryArrayToNumber([1, 0, 1, 1]))
+
+///////////////////////////////////////////////
+
+// function squareSum(numbers){
+//     return numbers.map(num => num * num).reduce((a, b) => a + b, 0)
+
+//     return numbers.reduce((sum, n) => (n*n) + sum, 0)
+// }
+
+// console.log(squareSum([0, 3, 4, 5]))
+
+/////////////////////////////////////////////////
+
+// function solution(str, ending){
+//     return str.slice(str.length - ending.length) === ending
+
+//     return str.endsWith(ending)
+// }
+
+// console.log(solution('abcde', 'cde'))
+
+/////////////////////////////////////////////////
+
+// function XO(str) {
+//     let lowered = str.toLowerCase()
+//     let xCount = 0
+//     let oCount = 0
+
+//     for (let i = 0; i < lowered.length; i++) {
+//         if (lowered[i] === "x") {
+//             xCount++
+//         }
+//         if (lowered[i] === "o") {
+//             oCount++
+//         }
+//     }
+//     return xCount === oCount
+// }
+
+// console.log(XO("zpzpzp"))
+
+//////////////////////////////////////////////////
+
+// NOT SOLVED YET
+// function nbYear(p0, percent, aug, p) {    
+//     for (var year = 0; p0 < p; year++) {
+//         p0 = p0 * (1 + percent/100) + aug    
+//     }
+//     return year
+// }
+
+// console.log(nbYear(1500, 5, 100, 5000))
+
+//////////////////////////////////////////////////
+
+// const areaOrPerimeter = function(l , w) {
+//     return l == w ? l * w : (l * 2) + (w * 2)    
+// };
+
+// console.log(areaOrPerimeter(6, 10))
+
+//////////////////////////////////////////////////

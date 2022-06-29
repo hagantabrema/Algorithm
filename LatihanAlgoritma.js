@@ -692,3 +692,119 @@
 // console.log(areaOrPerimeter(6, 10))
 
 //////////////////////////////////////////////////
+
+// function twiceAsOld(dadYearsOld, sonYearsOld) {
+//     return Math.abs(dadYearsOld - sonYearsOld * 2)
+// }
+
+// console.log(twiceAsOld(55, 30))
+
+//////////////////////////////////////////////////
+
+// var countSheep = function (num){
+//     let result = ""
+
+//     if (num == 0) {
+//         return result
+//     } else {
+//         for (let i = 1; i <= num; i++) {
+//             result += `${i} sheep...`
+//         }
+//     }
+//     return result
+// }
+
+// console.log(countSheep(0))
+
+////////////////////////////////////////////////////
+
+// function finalGrade (exam, projects) {
+//     if (exam > 90 || projects > 10) return 100
+//     if (exam > 75 && projects >= 5) return 90
+//     if (exam > 50 && projects >= 2) return 75
+//     return 0
+// }
+
+// console.log(finalGrade(85, 5))
+
+////////////////////////////////////////////////////
+
+// function feast(beast, dish) {
+//     return beast[0] == dish[0] && beast[beast.length-1] == dish[dish.length-1]
+// }
+
+// console.log(feast("great blue heron", "garlic naan"))
+
+///////////////////////////////////////////////////
+
+// function isDivideBy(number, a, b) {
+//     return number % a === 0 && number % b === 0
+// }
+
+// console.log(isDivideBy(15, 3, -5))
+
+///////////////////////////////////////////////////
+
+// const reverseSeq = n => {
+//     let arr = []
+//     for (let i = n; i > 0; i--) {
+//         arr.push(i)
+//     }
+//     return arr
+// }
+
+// console.log(reverseSeq(5))
+
+///////////////////////////////////////////////////
+
+// function sameCase(a, b){
+//     if (/[a-z]/i.test(a) && /[a-z]/i.test(b)) {
+//         return Number(/[a-z]/.test(a) == /[a-z]/.test(b))
+//     }
+//     return -1
+// }
+
+// console.log(sameCase("a", "g"))
+
+////////////////////////////////////////////////////
+
+// function elevator(left, right, call) {
+//     return Math.abs(call - left) < Math.abs(call - right) ? "left" : "right"
+// }
+
+// console.log(elevator(0, 2, 1))
+
+////////////////////////////////////////////////////
+
+// function pillars(num_pill, dist, width) {
+//     return num_pill > 1 ? (num_pill - 1) * (dist * 100) + (width * (num_pill - 2)) : 0
+// }
+
+// console.log(pillars(11, 15, 30))
+
+/////////////////////////////////////////////////////
+
+// function usdcny(usd) {
+//   return (usd * 6.75).toFixed(2).toString() + " Chinese Yuan"
+// }
+
+// console.log(usdcny(1668))
+
+/////////////////////////////////////////////////////
+
+// function nearestSq(n){
+//     return Math.pow(Math.round(Math.sqrt(n)), 2)
+// }
+
+// console.log(nearestSq(111))
+
+/////////////////////////////////////////////////////
+
+// function defineSuit(card) {
+//     return card.includes('♣') ? 'clubs' : card.includes('♦') ? 'diamonds' : card.includes('♥') ? 'hearts' : 'spades'
+// }
+
+// console.log(defineSuit('3♣'))
+
+////////////////////////////////////////////////////
+

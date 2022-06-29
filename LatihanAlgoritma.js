@@ -808,3 +808,48 @@
 
 ////////////////////////////////////////////////////
 
+// function multipleOfIndex(array) {
+//     let result = []
+//     for (let i = 0; i <= array.length; i++) {
+//         if (array[i] % i === 0) {
+//             result.push(array[i])
+//         }
+//     }
+//     return result
+// }
+
+//another solution
+// const multipleOfIndex = (array) => array.filter((el, index) => el % index === 0)
+
+// console.log(multipleOfIndex([22, -6, 32, 82, 9, 25]))
+
+////////////////////////////////////////////////////
+
+// function sakuraFall(v) {
+//     return v > 0 ? 400 / v : 0
+// }
+
+// console.log(sakuraFall(10))
+
+////////////////////////////////////////////////////
+
+// function otherAngle(a, b) {
+//     return 180 - a - b
+// }
+
+// console.log(otherAngle(30, 30))
+
+////////////////////////////////////////////////////
+
+// function power(x,y){
+//     let result = 1
+//     for (let i = 1; i <= y; i++) {
+//         result *= x
+//     }
+//     return result
+// }
+
+// console.log(power(3, 2))
+
+////////////////////////////////////////////////////
+

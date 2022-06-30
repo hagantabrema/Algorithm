@@ -853,3 +853,60 @@
 
 ////////////////////////////////////////////////////
 
+// function whatday(num) {
+//     if (num === 1) return "Sunday"
+//     if (num === 2) return "Monday"
+//     if (num === 3) return "Tuesday"
+//     if (num === 4) return "Wednesday"
+//     if (num === 5) return "Thursday"
+//     if (num === 6) return "Friday"
+//     if (num === 7) return "Saturday"
+//     else return "Wrong, please enter a number between 1 and 7"
+// }
+
+// console.log(whatday(4))
+
+////////////////////////////////////////////////////
+
+// function iceBrickVolume(radius, bottleLength, rimLength) {
+//     return radius * 2 * (bottleLength - rimLength) * radius
+// }
+
+// console.log(iceBrickVolume(5, 30, 7))
+
+////////////////////////////////////////////////////
+
+// function typeValidation(variable, type) {
+//     return typeof variable === type
+// }
+
+// console.log(typeValidation(42, "number"))
+
+////////////////////////////////////////////////////
+
+// var replaceDots = function(str) {
+//     // return str.replaceAll('.', '-')
+//     // return str.replace(/\./g, '-')
+//     return str.replace(/[.]/g, '-')
+// }
+
+// console.log(replaceDots("one.two.three"))
+
+////////////////////////////////////////////////////
+
+// function integrate(coefficient, exponent) {
+//     let newExp = exponent + 1
+//     return coefficient/(exponent + 1) + "x^" + (exponent + 1)
+// }
+
+// console.log(integrate(3, 2))
+
+////////////////////////////////////////////////////
+
+// function checkTheBucket(bucket){
+//     return bucket.indexOf("gold") !== -1
+// }
+
+// console.log(checkTheBucket(["gold", "stone", "stone", "stone", "stone"]))
+
+////////////////////////////////////////////////////

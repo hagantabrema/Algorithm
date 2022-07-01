@@ -910,3 +910,70 @@
 // console.log(checkTheBucket(["gold", "stone", "stone", "stone", "stone"]))
 
 ////////////////////////////////////////////////////
+
+// function derive(coefficient,exponent) {
+//     return coefficient * exponent + "x^" + (exponent - 1)
+//     // string + / * integer = string
+//     // (exponent - 1) harus dikasih kurung karena operasi ini akan diselesaikan terlebih dahulu 
+//     // yang nantinya menghasilkan integer
+//     // jadi operasi akhirnya itu integer * integer + string + integer = string
+    
+//     // kalo ga dikasih kurung, integer * integer + string (sampe sini udah jadi string) + int - int
+//     // jadi error karena string ketemu integer = NaN
+// }
+
+// console.log(derive(7, 8))
+
+/////////////////////////////////////////////////////
+
+// function capitalizeWord(word) {
+//     return word[0].toUpperCase() + word.slice(1)
+// }
+
+// console.log(capitalizeWord("hello"))
+
+/////////////////////////////////////////////////////
+
+// function oddCount(n){
+//     // programming approach
+//     let result = []
+//     for (let i = 1; i < n; i++) {
+//         if (i % 2 !== 0) {
+//             result.push(i)
+//         }
+//     }
+//     return result.length
+    
+//     // sneaky math approach
+//     return Math.floor(n/2)
+// }
+
+// console.log(oddCount(15023))
+
+//////////////////////////////////////////////////////
+
+// function warnTheSheep(queue) {
+//     // my solution
+//     if (queue[queue.length-1] === "wolf") {
+//         return "Pls go away and stop eating my sheep"
+//     } else if (queue.includes("wolf")) {
+//         return "Oi! Sheep number " + (queue.length - 1 - queue.indexOf("wolf")) + "! You are about to be eaten by a wolf!"
+//     }
+
+//     // jenius solution
+//     const position = queue.reverse().indexOf('wolf');
+//     return position === 0 ? 'Pls go away and stop eating my sheep' : `Oi! Sheep number ${ position }! You are about to be eaten by a wolf!`
+// }
+
+// console.log(warnTheSheep(["sheep", "sheep", "sheep", "sheep", "sheep", "wolf", "sheep", "sheep"]))
+
+//////////////////////////////////////////////////////
+
+// function unusualFive() {
+//     // lmao this kata
+//     return "fivee".length
+// }
+
+// console.log(unusualFive())
+
+//////////////////////////////////////////////////////

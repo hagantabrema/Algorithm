@@ -960,7 +960,7 @@
 //         return "Oi! Sheep number " + (queue.length - 1 - queue.indexOf("wolf")) + "! You are about to be eaten by a wolf!"
 //     }
 
-//     // jenius solution
+//     // genius solution
 //     const position = queue.reverse().indexOf('wolf');
 //     return position === 0 ? 'Pls go away and stop eating my sheep' : `Oi! Sheep number ${ position }! You are about to be eaten by a wolf!`
 // }
@@ -977,3 +977,97 @@
 // console.log(unusualFive())
 
 //////////////////////////////////////////////////////
+
+// function nthEven(n){
+//     return 2*n-2
+// }
+
+// console.log(nthEven(100))
+
+//////////////////////////////////////////////////////
+
+// function spEng(sentence){
+//     return (/english/i).test(sentence)
+// }
+
+// console.log(spEng("english"))
+
+//////////////////////////////////////////////////////
+
+// function invert(array) {
+//     return array.map(num => num * -1)
+// }
+
+// console.log(invert([1,2,3,4,5]))
+
+//////////////////////////////////////////////////////
+
+// function updateLight(current) {
+//     switch(current) {
+//         case "green":
+//             return "yellow"
+//             break
+//         case "yellow":
+//             return "red"
+//             break
+//         case "red":
+//             return "green"
+//             break
+//     }
+// }
+
+// console.log(updateLight("yellow"))
+
+////////////////////////////////////////////
+
+// const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+//     return mpg * fuelLeft >= distanceToPump
+// }
+
+// console.log(zeroFuel(50, 25, 2))
+
+///////////////////////////////////////////
+
+// function enough(cap, on, wait) {
+//     return cap - on + wait
+// }
+
+// console.log(enough(10, 5, 5))
+
+////////////////////////////////////////////
+
+// function findDifference(a, b) {
+//     return Math.abs(a.reduce((previous, current) => previous * current, 1) - b.reduce((previous, current) => previous * current, 1))
+// }
+
+// console.log(findDifference([6,6,10], [4,10,6]))
+
+////////////////////////////////////////////
+
+// function findMultiples(integer, limit) {
+//     let array = []
+//     for (let i = integer; i <= limit; i+=integer) {
+//         array.push(i)
+//     }
+//     return array
+// }
+
+// console.log(findMultiples(2, 10))
+
+///////////////////////////////////////////
+
+// function seatsInTheater(nCols, nRows, col, row) {
+//     return (nCols - (col - 1)) * (nRows - row); 
+// }
+
+// console.log(seatsInTheater(16,11,5,3))
+
+///////////////////////////////////////////
+
+// function combat(health, damage) {
+//     return health - damage > 0 ? health - damage : 0
+// }
+
+// console.log(combat(100, 120))
+
+///////////////////////////////////////////

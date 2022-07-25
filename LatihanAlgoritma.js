@@ -1174,3 +1174,28 @@
 
 /////////////////////////////////////////
 
+// function alternate(n, firstValue, secondValue){
+//     let arr = []
+//     for (let i = 0; i < n; i++) {
+//         if (i % 2 === 0) {
+//             arr.push(firstValue)
+//         } else {
+//             arr.push(secondValue)
+//         }
+//     }
+//     return arr
+// }
+
+// console.log(alternate(1, true, false))
+
+//////////////////////////////////////////
+
+// function fourSeven(n){
+//     while (n == 4) return 7
+//     while (n == 7) return 4
+//     return 0
+// }
+
+// console.log(fourSeven(4))
+
+//////////////////////////////////////////

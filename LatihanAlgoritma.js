@@ -1071,3 +1071,106 @@
 // console.log(combat(100, 120))
 
 ///////////////////////////////////////////
+
+// function simpleMultiplication(number) {
+//     return number % 2 == 0 ? number * 8 : number * 9
+// }
+
+// console.log(simpleMultiplication(2))
+
+///////////////////////////////////////////
+
+// function litres(time) {
+//     return Math.floor(0.5 * time)
+// }
+
+// console.log(litres(100))
+
+///////////////////////////////////////////
+
+// function switchItUp(number){
+//     switch (number) {
+//         case 1:
+//         return "One"
+//         break
+//         case 2:
+//         return "Two"
+//         break
+//         case 3:
+//         return "Three"
+//         break
+//         case 4:
+//         return "Four"
+//         break
+//         case 5:
+//         return "Five"
+//         break
+//         case 6:
+//         return "Six"
+//         break
+//         case 7:
+//         return "Seven"
+//         break
+//         case 8:
+//         return "Eight"
+//         break
+//         case 9:
+//         return "Nine"
+//         break
+//     }
+// }
+
+// console.log(switchItUp(3))
+
+////////////////////////////////////////
+
+// function apple(x){
+//     return Math.pow(x, 2) > 1000 ? "It's hotter than the sun!!" : "Help yourself to a honeycomb Yorkie for the glovebox."
+// }
+
+// console.log(apple(50))
+
+////////////////////////////////////////
+
+// function position(letter){
+//     return `Position of alphabet: ${letter.charCodeAt() - 96}`
+// }
+
+// console.log(position("c"))
+
+////////////////////////////////////////
+
+// function grow(x){
+//     return x.reduce((prev, curr) => prev * curr, 1)
+// }
+
+// console.log(grow([1, 2, 3]))
+
+////////////////////////////////////////
+
+// function howMuchILoveYou(nbPetals) {
+//     const phrases = ["I love you", "a little", "a lot", "passionately", "madly", "not at all"]
+//     return phrases[(nbPetals - 1) % 6]
+// }
+
+// console.log(howMuchILoveYou(367))
+
+////////////////////////////////////////
+
+// function strCount(str, letter){
+//     // let count = 0
+//     // for (let i = 0; i < str.length; i++) {
+//     //     if (letter == str[i]) {
+//     //         count++
+//     //     }
+//     // }
+//     // return count
+
+//     // genius
+//     return str.split(letter).length-1
+// }
+
+// console.log(strCount("Hello", "l"))
+
+/////////////////////////////////////////
+

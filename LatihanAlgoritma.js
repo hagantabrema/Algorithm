@@ -1199,3 +1199,36 @@
 // console.log(fourSeven(4))
 
 //////////////////////////////////////////
+
+// not solved yet
+// function oddOrEven(n) {
+//     return (n / 2) % 2 == 0 ? "EVEN" : "ODD"
+// }
+
+// console.log(oddOrEven(1))
+
+//////////////////////////////////////////
+
+// function dotCalculator (equation) {
+//     let splitted = equation.split(" ")
+//     if (splitted[1] === "//") {
+//         splitted[1] = "/"
+//     }
+//     return ".".repeat(eval(splitted[0].length + splitted[1] + splitted[2].length))
+// }
+
+// console.log(dotCalculator("...... / ..."))
+
+//////////////////////////////////////////
+
+// function leastLarger(a,i) {
+//     // let newArr = [...a]
+//     // let larger = newArr.sort((a, b) => a - b).filter(num => num > a[i])
+//     // return larger[0] == newArr[i] ? -1 : a.indexOf(larger[0])
+
+//     return a.indexOf(Math.min(...a.filter(num => num > a[i])))
+// }
+
+// console.log(leastLarger([1, 3, 5, 2, 4], 0))
+
+///////////////////////////////////////////

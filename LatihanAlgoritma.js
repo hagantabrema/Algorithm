@@ -1232,3 +1232,22 @@
 // console.log(leastLarger([1, 3, 5, 2, 4], 0))
 
 ///////////////////////////////////////////
+
+//////////////////////////////////////
+// INTERMEDIATE ALGORITHM SCRIPTING //
+//////////////////////////////////////
+
+// function myReplace(str, before, after) {
+//     if (str[str.indexOf(before)] === str[str.indexOf(before)].toUpperCase()) {
+//         after = after.charAt(0).toUpperCase() + after.slice(1)
+//     } else {
+//         after = after.charAt(0).toLowerCase() + after.slice(1)
+//     }
+
+//     let result = str.replace(before, after)
+//     return result
+// }
+  
+// console.log(myReplace("A quick brown fox jumped over the lazy dog", "jumped", "leaped"))
+
+////////////////////////////////////////////

@@ -1251,3 +1251,66 @@
 // console.log(myReplace("A quick brown fox jumped over the lazy dog", "jumped", "leaped"))
 
 ////////////////////////////////////////////
+
+// function convertHTML(str) {
+//     let newStr = str.split("")
+
+//     for (let i = 0; i < newStr.length; i++) {
+//         switch(newStr[i]) {
+//             case "&":
+//                 newStr[i] = "&amp;"
+//                 break
+//             case "<":
+//                 newStr[i] = "&lt;"
+//                 break
+//             case ">":
+//                 newStr[i] = "&gt;"
+//                 break
+//             case '"':
+//                 newStr[i] = "&quot;"
+//                 break
+//             case "'":
+//                 newStr[i] = "&apos;"
+//                 break
+//         }
+//     }
+
+//     let result = newStr.join("")
+//     return result
+// }
+  
+// console.log(convertHTML('Stuff in "quotation marks"'))
+
+/////////////////////////////////////////////////
+
+// function smallestCommons(arr) {
+//     let sorted = arr.sort((a,b) => a - b)
+//     let bottom = sorted[0]
+//     let top = sorted[1]
+
+//     let newArr = []
+
+//     for (let i = bottom; i <= top; i++) {
+//         newArr.push(i)
+//     }
+
+//     return newArr.reduce((prev, curr) => prev * curr, 1)
+// }
+  
+// console.log(smallestCommons([2,10]))
+
+/////////////////////////////////////////////////
+
+function solution(a, b){
+    let arr = []
+
+    if (a.length < b.length) {
+        arr.push(a, b, a)
+    } else {
+        arr.push(b, a, b)
+    }
+
+    return arr.join("")
+}
+
+console.log(solution("short", "looooong"))

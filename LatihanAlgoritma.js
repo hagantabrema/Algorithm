@@ -1301,16 +1301,93 @@
 
 /////////////////////////////////////////////////
 
-function solution(a, b){
-    let arr = []
+// function solution(a, b){
+//     let arr = []
 
-    if (a.length < b.length) {
-        arr.push(a, b, a)
-    } else {
-        arr.push(b, a, b)
-    }
+//     if (a.length < b.length) {
+//         arr.push(a, b, a)
+//     } else {
+//         arr.push(b, a, b)
+//     }
 
-    return arr.join("")
-}
+//     return arr.join("")
+// }
 
-console.log(solution("short", "looooong"))
+/////////////////////////////////////////////////
+
+// console.log(solution("short", "looooong"))
+
+// function array(string) {
+
+//     let arr = string.split(",")
+
+//     if (arr.length === 0 || arr.length === 1 || arr.length === 2) return null
+
+//     return arr.slice(1, arr.length - 1).join(" ")
+
+// }
+
+// console.log(array("1,2,3,4"))
+
+/////////////////////////////////////////////////
+
+// function sayHello( name, city, state ) {
+
+//     //return "Hello, " + name.join(" ") + "! Welcome to " + city + ", " + state + "!"
+
+//     return `Hello, ${name.join(" ")}! Welcome to ${city}, ${state}!`
+
+// }
+
+// console.log(sayHello(['John', 'Smith'], 'Phoenix', 'Arizona'))
+
+/////////////////////////////////////////////////
+
+// function removeEveryOther(arr){
+//     return arr.filter((el, index) => index % 2 === 0)
+// }
+
+// console.log(removeEveryOther(["Keep", "Remove", "Keep", "Remove", "Keep"]))
+
+/////////////////////////////////////////////////
+
+// function stringy(size) {
+
+//     if (size === 1) return "1"
+
+//     let arr = []
+
+//     for (i = 0; i < size; i++) {
+//         if (i % 2 === 0) {
+//             arr.push(1)
+//         } else {
+//             arr.push(0)
+//         }
+//     }
+
+//     return arr.join("").toString()
+// }
+
+// console.log(stringy(6))
+
+/////////////////////////////////////////////////
+
+// function addLength(str) {
+
+//     let arr = str.split(" ")
+
+//     let result = []
+
+//     for (i = 0; i < arr.length; i++) {
+//         result.push(`${arr[i]} ${arr[i].length}`)
+//     }
+
+//     return result
+
+//     //return str.split(" ").map((el => `${el} ${el.length}`)
+// }
+
+// console.log(addLength("apple ban"))
+
+/////////////////////////////////////////////////
+

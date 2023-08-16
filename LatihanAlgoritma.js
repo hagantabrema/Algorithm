@@ -1391,3 +1391,31 @@
 
 /////////////////////////////////////////////////
 
+function printArray(array){
+    return array.join(",")
+}
+
+console.log(printArray(["h","o","l","a"]))
+
+///////////////////////////////////////////////
+
+function pipeFix(numbers){
+    let arr = []
+    for (let i = numbers[0]; i <= numbers[numbers.length-1]; i++) {
+        arr.push(i)        
+    }
+
+    return arr
+}
+
+console.log(pipeFix([1,2,3,4,7,9,10]))
+
+///////////////////////////////////////////////
+
+function cookie(x){
+    return typeof x === "string" ? "Who ate the last cookie? It was Zach!" : typeof x === "number" ? "Who ate the last cookie? It was Monica!" : "Who ate the last cookie? It was the dog!"
+}
+
+console.log(cookie([3,3,3,3]))
+
+///////////////////////////////////////////////

@@ -1391,31 +1391,129 @@
 
 /////////////////////////////////////////////////
 
-function printArray(array){
-    return array.join(",")
+// function printArray(array){
+//     return array.join(",")
+// }
+
+// console.log(printArray(["h","o","l","a"]))
+
+// ///////////////////////////////////////////////
+
+// function pipeFix(numbers){
+//     let arr = []
+//     for (let i = numbers[0]; i <= numbers[numbers.length-1]; i++) {
+//         arr.push(i)        
+//     }
+
+//     return arr
+// }
+
+// console.log(pipeFix([1,2,3,4,7,9,10]))
+
+// ///////////////////////////////////////////////
+
+// function cookie(x){
+//     return typeof x === "string" ? "Who ate the last cookie? It was Zach!" : typeof x === "number" ? "Who ate the last cookie? It was Monica!" : "Who ate the last cookie? It was the dog!"
+// }
+
+// console.log(cookie([3,3,3,3]))
+
+// ///////////////////////////////////////////////
+
+function distinct(a) {
+    let result = []
+    for (let i = 0; i < a.length; i++) {
+        if (!result.includes(a[i])) {
+            result.push(a[i])
+        }
+    }
+    return result
 }
 
-console.log(printArray(["h","o","l","a"]))
+//console.log(distinct([1, 2, 1, 1, 3, 2]))
 
-///////////////////////////////////////////////
+// ///////////////////////////////////////////////
 
-function pipeFix(numbers){
-    let arr = []
-    for (let i = numbers[0]; i <= numbers[numbers.length-1]; i++) {
-        arr.push(i)        
+function whoIsPaying(name){
+    // let result = []
+    // name.length <= 2 ? result.push(name) : result.push(name, name.slice(0, 2))
+    // return result
+
+    return name.length <= 2 ? [name] : [name, name.slice(0, 2)]
+}
+
+// console.log(whoIsPaying("asdasdfadsf"))
+
+// ///////////////////////////////////////////////
+
+function dutyFree(normPrice, discount, hol) {
+    // return normPrice === 0 || discount === 0 ? Infinity : parseInt(hol / (normPrice * (discount/100)))
+    return(Math.floor(hol / normPrice / discount * 100))
+}
+
+// console.log(dutyFree(1396, 0, 5628))
+
+// ///////////////////////////////////////////////
+
+function noBoringZeros(n) {
+    let res = parseInt(n.toString().replace(/\.?0+$/, ''))
+    return res === NaN ? +0 : res
+}
+
+// console.log(noBoringZeros(96000))\
+
+// ///////////////////////////////////////////////
+
+function reverseList(list) {
+    return list.reverse()
+}
+
+// console.log(reverseList([1,2,3,4]))
+
+// ///////////////////////////////////////////////
+
+function enough(cap, on, wait) {
+    // return on + wait <= cap ? 0 : (cap - on - wait) * -1
+    return Math.max(wait + on - cap, 0);
+
+}
+
+// console.log(enough(100, 60, 50))
+
+// ///////////////////////////////////////////////
+
+function findAverage(array) {
+    return array.length === 0 ? 0 : array.reduce((prev, curr) => prev + curr, 0) / array.length
+}
+
+// console.log(findAverage([1,2,3]))
+
+// ///////////////////////////////////////////////
+
+function doubleChar(str) {
+    let result = []
+    for (let i = 0; i < str.length; i++) {
+        result.push(str[i], str[i])
     }
 
-    return arr
+    return result.join("")
 }
 
-console.log(pipeFix([1,2,3,4,7,9,10]))
+// console.log(doubleChar("abc"))
 
-///////////////////////////////////////////////
+// ///////////////////////////////////////////////
 
-function cookie(x){
-    return typeof x === "string" ? "Who ate the last cookie? It was Zach!" : typeof x === "number" ? "Who ate the last cookie? It was Monica!" : "Who ate the last cookie? It was the dog!"
+function billboard(name, price = 30){
+    let char = name.length
+    let result = 0
+
+    for (let i = 1; i <= price; i++) {
+        result += char
+    }
+
+    return result
 }
 
-console.log(cookie([3,3,3,3]))
+// console.log(billboard("hello"))
 
-///////////////////////////////////////////////
+// ///////////////////////////////////////////////

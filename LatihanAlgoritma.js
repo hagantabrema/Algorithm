@@ -1420,100 +1420,178 @@
 
 // ///////////////////////////////////////////////
 
-function distinct(a) {
-    let result = []
-    for (let i = 0; i < a.length; i++) {
-        if (!result.includes(a[i])) {
-            result.push(a[i])
-        }
-    }
-    return result
-}
+// function distinct(a) {
+//     let result = []
+//     for (let i = 0; i < a.length; i++) {
+//         if (!result.includes(a[i])) {
+//             result.push(a[i])
+//         }
+//     }
+//     return result
+// }
 
 //console.log(distinct([1, 2, 1, 1, 3, 2]))
 
 // ///////////////////////////////////////////////
 
-function whoIsPaying(name){
-    // let result = []
-    // name.length <= 2 ? result.push(name) : result.push(name, name.slice(0, 2))
-    // return result
+// function whoIsPaying(name){
+//     // let result = []
+//     // name.length <= 2 ? result.push(name) : result.push(name, name.slice(0, 2))
+//     // return result
 
-    return name.length <= 2 ? [name] : [name, name.slice(0, 2)]
-}
+//     return name.length <= 2 ? [name] : [name, name.slice(0, 2)]
+// }
 
 // console.log(whoIsPaying("asdasdfadsf"))
 
 // ///////////////////////////////////////////////
 
-function dutyFree(normPrice, discount, hol) {
-    // return normPrice === 0 || discount === 0 ? Infinity : parseInt(hol / (normPrice * (discount/100)))
-    return(Math.floor(hol / normPrice / discount * 100))
-}
+// function dutyFree(normPrice, discount, hol) {
+//     // return normPrice === 0 || discount === 0 ? Infinity : parseInt(hol / (normPrice * (discount/100)))
+//     return(Math.floor(hol / normPrice / discount * 100))
+// }
 
 // console.log(dutyFree(1396, 0, 5628))
 
 // ///////////////////////////////////////////////
 
-function noBoringZeros(n) {
-    let res = parseInt(n.toString().replace(/\.?0+$/, ''))
-    return res === NaN ? +0 : res
-}
+// function noBoringZeros(n) {
+//     let res = parseInt(n.toString().replace(/\.?0+$/, ''))
+//     return res === NaN ? +0 : res
+// }
 
 // console.log(noBoringZeros(96000))\
 
 // ///////////////////////////////////////////////
 
-function reverseList(list) {
-    return list.reverse()
-}
+// function reverseList(list) {
+//     return list.reverse()
+// }
 
 // console.log(reverseList([1,2,3,4]))
 
 // ///////////////////////////////////////////////
 
-function enough(cap, on, wait) {
-    // return on + wait <= cap ? 0 : (cap - on - wait) * -1
-    return Math.max(wait + on - cap, 0);
+// function enough(cap, on, wait) {
+//     // return on + wait <= cap ? 0 : (cap - on - wait) * -1
+//     return Math.max(wait + on - cap, 0);
 
-}
+// }
 
 // console.log(enough(100, 60, 50))
 
 // ///////////////////////////////////////////////
 
-function findAverage(array) {
-    return array.length === 0 ? 0 : array.reduce((prev, curr) => prev + curr, 0) / array.length
-}
+// function findAverage(array) {
+//     return array.length === 0 ? 0 : array.reduce((prev, curr) => prev + curr, 0) / array.length
+// }
 
 // console.log(findAverage([1,2,3]))
 
 // ///////////////////////////////////////////////
 
-function doubleChar(str) {
-    let result = []
-    for (let i = 0; i < str.length; i++) {
-        result.push(str[i], str[i])
-    }
+// function doubleChar(str) {
+//     let result = []
+//     for (let i = 0; i < str.length; i++) {
+//         result.push(str[i], str[i])
+//     }
 
-    return result.join("")
-}
+//     return result.join("")
+// }
 
 // console.log(doubleChar("abc"))
 
 // ///////////////////////////////////////////////
 
-function billboard(name, price = 30){
-    let char = name.length
-    let result = 0
+// function billboard(name, price = 30){
+//     let char = name.length
+//     let result = 0
 
-    for (let i = 1; i <= price; i++) {
-        result += char
+//     for (let i = 1; i <= price; i++) {
+//         result += char
+//     }
+
+//     return result
+// }
+
+// console.log(billboard("hello"))
+
+// ///////////////////////////////////////////////
+
+function peopleWithAgeDrink(old) {
+    return old < 14 ? "drink toddy" :
+    old < 18 ? "drink coke" :
+    old < 21 ? "drink beer" :
+    "drink whisky"
+}
+
+// console.log(peopleWithAgeDrink(22))
+
+// ///////////////////////////////////////////////
+
+function tripleTrouble(one, two, three){
+    let result = ""
+
+    for (let i = 0; i < one.length; i++) {
+        result += one[i] + two[i] + three[i]
     }
 
     return result
 }
 
-// console.log(billboard("hello"))
+// console.log(tripleTrouble("sea", "urn", "pms"))
 
 // ///////////////////////////////////////////////
+
+function fakeBin(x){
+    // let result = []
+    // for (let i = 0; i < x.length; i++) {
+    //     x[i] < 5 ? result.push(0) : result.push(1)
+    // }
+    // return result.join("")
+
+    return x.split('').map(n => n < 5 ? 0 : 1).join('')
+}
+
+// console.log(fakeBin("45385593107843568"))
+
+// ///////////////////////////////////////////////
+
+function isPalindrome(x) {
+    return x.toLowerCase() === x.toLowerCase().split('').reverse().join('')
+}
+
+// console.log(isPalindrome("test"))
+
+// ///////////////////////////////////////////////
+
+function findNeedle(haystack) {
+    //return `found the needle at position ${haystack.findIndex((element) => element === "needle")}`
+    return `found the needle at position ${haystack.indexOf('needle')}`
+}
+
+// console.log(findNeedle(["hay", "junk", "hay", "hay", "moreJunk", "needle", "randomJunk"]))
+
+// ///////////////////////////////////////////////
+
+function lowercaseCount(str){
+    return [...str.match(/[a-z]/g)].length
+}
+
+// console.log(lowercaseCount("abcABC123!@€£#$%^&*()_-+=}{[]|':;?/>.<,~"))
+
+// ///////////////////////////////////////////////
+
+function sumMul(n,m){
+    let result = 0
+
+    for (let i = n; i < m; i++) {
+        if (i % n === 0) {
+            result += i
+        }
+    }
+
+    return result
+}
+
+// console.log(sumMul(2, 9))
